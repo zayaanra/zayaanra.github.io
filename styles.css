@@ -1,0 +1,35 @@
+body {
+    font-family: "Andale Mono", monospace;
+    width: "100%";
+    display: "flex";
+    overflow: "auto";
+    min-height: "100vh";
+    align-items: "center";
+    flex-direction: "column";
+}
+
+.name {
+    color: #828487;
+    margin-right: 20px;
+}
+
+.about-title {
+    margin-top: 5px;
+    color: #828487;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn {
+    padding: 5px;
+    border: none;
+    background: none;
+    color: #585a5c;
+    font-family: "Andale Mono", monospace;
+    font-size: large;
+}
