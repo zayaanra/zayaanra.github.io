@@ -1,35 +1,129 @@
 body {
-    font-family: "Andale Mono", monospace;
-    width: "100%";
-    display: "flex";
-    overflow: "auto";
-    min-height: "100vh";
-    align-items: "center";
-    flex-direction: "column";
+  font-family: "Andale Mono", monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
 }
 
-.name {
-    color: #828487;
-    margin-right: 20px;
+nav {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
 }
 
-.about-title {
-    margin-top: 5px;
-    color: #828487;
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.logo h1 {
+  color: #333333;
+  margin: 0;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.menu ul li a:hover {
+  text-decoration: underline;
+}
+
+.project-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+
+.project {
+  flex-direction: column;
+  text-align: left;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.project p {
+  margin-top: 5px;
+}
+
+.tools {
+    flex-direction: row;
+    margin-bottom: 20px;
 }
 
 
-.btn {
-    padding: 5px;
-    border: none;
-    background: none;
-    color: #585a5c;
-    font-family: "Andale Mono", monospace;
-    font-size: large;
+img {
+  vertical-align: middle;
+  width: 25%;
+  height: 50%;
+  pointer-events: none;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.container h2 {
+  color: #333333;
+}
+
+.container p {
+  color: #666666;
+}
+
+.container div {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; /* Adjust as needed */
+}
+
+.container div i {
+  margin-right: 10px; /* Adjust as needed */
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+.social-links a {
+  color: #333333;
+  text-decoration: none;
+  margin-left: 5px; /* Adjust spacing between icons */
+}
+
+.social-links a:hover {
+  color: #007bff; /* Change color on hover if desired */
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .project-section {
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* Set to one column for smaller screens */
+  }
 }
