@@ -46,8 +46,6 @@ nav {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   width: 80%;
-  margin: 0 auto;
-  margin-top: 10px
 }
 
 .project {
