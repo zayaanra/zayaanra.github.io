@@ -73,6 +73,19 @@
         <h2>Projects</h2>
         <div class="project-section">
           <div class="project">
+            <h3>Cloud Based Coding Assistant</h3>
+            <p>
+              This was another interesting project. I wanted to combine my knowledge of LLMs and cloud computing together, so what better to do that than just creating a coding assistant that combines
+              the best of both worlds? First, I worked a few other developers to create this project. We decided that we can create this coding assistant through VSCode (inspired by GitHub copilot and other extensions!).
+              Next step was the most fun part - design a system architecture using various cloud computing compnents. We decided that using AWS would be the easiest. There were several components we included. API Gateway and Lambda
+              were to be used as the RESTful API and handling the endpoints. SageMaker would be used to a host the Meta Code Llama 70B LLM (we actually tested several models but found that this one was the best for our use case).
+              We also didn't want to complicate user setup so we simplified that by using AWS Cognito which handles user storage and authentication for us. At this point, I felt like something was missing. I wanted to implement a small
+              dashboard that could visualize user metrics (like what languages they used and what type of requests they made to the LLM). For this, I decided to use SQS and DynamoDB. A SQS queue was used for temporary storage of user
+              metrics until an EventBridge schedule would later pull those metrics out and perform one batch write to DynamoDB. Finally, the dashboard which was written in HTML was hosted in a S3 bucket.
+            </p>
+          </div>
+
+          <div class="project">
             <h3>Containerized Task Management</h3>
             <p>
               This is a personal favorite of mine. This is a project that allows you keep track of tasks that you have to complete. However, the core of the project is not the main application itself.
